@@ -17,6 +17,24 @@ A browser extension that intercepts YouTube video links and provides AI-generate
 - "Watch Video" button with confirmation to help maintain your focus intentions
 - Dark mode support
 
+
+### **📌 Why This Works – The Psychology Behind It**  
+
+Most **YouTube blockers** fail because they rely on **force** rather than **intention**. What happens when you install a typical blocker? You eventually **disable it** out of frustration and fall back into binge-watching.  
+
+This extension works differently. Instead of blocking, it **redirects** you to a summary of the video. The key here is **removing the dopamine trap**:  
+
+- **Videos are mesmerizing** – High engagement, visual stimulation, endless autoplay.  
+- **Text is neutral** – No flashy thumbnails, no infinite scroll, just raw information.  
+
+By making you **read first**, it forces your brain to **think rationally** before watching. In most cases, you realize:  
+💡 *"I don’t actually need to watch this—I get the point."*  
+
+This isn’t about mindless restriction; it’s about **intentional decision-making**. You still have the option to watch, but you’re given the mental space to **choose productivity over procrastination.**  
+
+🚀 **Watch Less, Learn More.**
+
+
 ## Installation
 
 ### Chrome Web Store (Coming Soon)
