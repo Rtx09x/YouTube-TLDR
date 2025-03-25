@@ -2,7 +2,8 @@
 
 A browser extension that intercepts YouTube video links and provides AI-generated summaries to help reduce distractions and make better decisions about your video consumption.
 
-![YouTube TLDR Extension](screenshots/screenshot.png)
+![YouTube TLDR Extension](screenshots/screenshot1.png)
+![YouTube TLDR Extension](screenshots/screenshot2.png)
 
 ## Features
 
@@ -26,11 +27,12 @@ The extension will be available on the Chrome Web Store soon! Stay tuned for the
 #### Prerequisites
 
 - Google Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
+   - Chill Out Its Free and enough for personal use case!
 - Chrome, Edge, or other Chromium-based browser
 
 #### Option 1: Install from GitHub Release
 
-1. Go to the [Releases](https://github.com/YOURUSERNAME/youtube-tldr/releases) page
+1. Go to the [Releases](https://github.com/Rtx09x/YouTube-TLDR/releases) page
 2. Download the latest release ZIP file
 3. Extract the ZIP file to a folder on your computer
 4. Open your browser and navigate to the extensions page:
@@ -44,7 +46,7 @@ The extension will be available on the Chrome Web Store soon! Stay tuned for the
 
 1. Clone this repository:
    ```
-   git clone https://github.com/YOURUSERNAME/youtube-tldr.git
+   git clone https://github.com/Rtx09x/YouTube-TLDR.git
    ```
 2. Open your browser and navigate to the extensions page:
    - Chrome: `chrome://extensions/`
@@ -66,6 +68,7 @@ The extension will be available on the Chrome Web Store soon! Stay tuned for the
 - **Changing Settings**: Click the extension icon to adjust preferences
 - **Watching Videos**: If you decide to watch the video after reading the summary, click the "Watch Video" button at the bottom of the summary page
 - **Ask Questions**: Use the chat interface on the summary page to ask specific questions about the video content
+   - Let's be real here, the chat is really crappy right now and i'd love contributions but i'm not really free these days so... yeah!
 
 ## Customization
 
@@ -93,25 +96,6 @@ This extension:
 - Does not collect user data beyond what's needed to function
 - Processes video content through the Gemini API using your own API key
 - Does not send any data to our servers
-
-## How to Package the Extension
-
-To create a ZIP file for distribution or submission to the Chrome Web Store:
-
-1. Make sure you have all the necessary files in your project directory:
-   - manifest.json
-   - background.js
-   - content.js
-   - popup/ (directory with popup files)
-   - summary/ (directory with summary page files)
-   - icons/ (directory with extension icons)
-
-2. Create a ZIP file containing all these files/directories (excluding any development files like .git, node_modules, etc.)
-
-3. The resulting ZIP file can be:
-   - Submitted to the Chrome Web Store
-   - Shared for manual installation
-   - Used for creating GitHub releases
 
 ## Contributing
 
