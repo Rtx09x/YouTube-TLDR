@@ -1,0 +1,224 @@
+/* YouTube TLDR Extension - Popup CSS */
+:root {
+  --primary: #3d85c6;
+  --primary-hover: #1c64a8;
+  --text: #333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --border: #ddd;
+  --success: #4caf50;
+  --font: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, sans-serif;
+  --background: #ffffff;
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+  --text: #e4e4e4;
+  --light-gray: #232323;
+  --medium-gray: #3a3a3a;
+  --border: #444;
+  --background: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  font-family: var(--font);
+  color: var(--text);
+  line-height: 1.5;
+  background-color: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Toggle Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--medium-gray);
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary);
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+#statusText {
+  font-size: 14px;
+}
+
+/* Settings Styles */
+.setting-group {
+  margin-bottom: 16px;
+}
+
+.appearance .theme-toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select, input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+#saveApiKey {
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.version {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Advanced Settings Button */
+.advanced-settings-btn {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.advanced-settings-btn:hover {
+  background-color: rgba(61, 133, 198, 0.1);
+}
+
+.verification-result {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: var(--bg-secondary);
+}
+
+.verification-result.loading {
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.full-width-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.full-width-button:hover {
+  background-color: var(--accent-hover);
+}
+
+.full-width-button:active {
+  transform: translateY(1px);
+} 

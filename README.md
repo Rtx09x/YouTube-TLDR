@@ -3,6 +3,7 @@
 A browser extension that intercepts YouTube video links and provides AI-generated summaries to help reduce distractions and make better decisions about your video consumption.
 
 ![YouTube TLDR Extension](screenshots/screenshot1.png)
+
 ![YouTube TLDR Extension](screenshots/screenshot2.png)
 
 ## Features

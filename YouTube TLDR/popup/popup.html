@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube TLDR</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YouTube TLDR</h1>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="enableToggle" checked>
+          <span class="slider"></span>
+        </label>
+        <span id="statusText">Enabled</span>
+      </div>
+    </header>
+    
+    <section class="settings">
+      <div class="setting-group">
+        <h2>Summary Tone</h2>
+        <select id="summaryTone">
+          <option value="professional">Professional</option>
+          <option value="witty">Witty</option>
+          <option value="funny">Funny</option>
+          <option value="genZ">Gen Z Style</option>
+          <option value="academic">Academic</option>
+          <option value="eli5">ELI5</option>
+          <option value="sarcastic">Sarcastic</option>
+        </select>
+      </div>
+      
+      <div class="setting-group">
+        <h2>Summary Length</h2>
+        <select id="summaryLength">
+          <option value="ultraShort">Ultra-short (1-2 sentences)</option>
+          <option value="short">Short (1 paragraph)</option>
+          <option value="medium" selected>Medium (2-3 paragraphs)</option>
+          <option value="detailed">Detailed (4+ paragraphs)</option>
+        </select>
+      </div>
+      
+      <div class="setting-group appearance">
+        <h2>Appearance</h2>
+        <div class="theme-toggle-container">
+          <span>Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <h2>Gemini API Key</h2>
+        <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+        <button id="saveApiKey">Save</button>
+      </div>
+
+      <div class="setting-group">
+        <button id="verifyApiKeys" class="full-width-button">Verify API Key</button>
+        <div id="verificationResult" class="verification-result"></div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="version">v1.0.0</div>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
